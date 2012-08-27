@@ -11,11 +11,19 @@
 #   poppler-utils poppler-data imagemagick pdftk sam2p
 #
 
-SRC = 'sample.pdf'
-TOP = 250
+SRC = 'fumo_4.pdf'
+
+## for Kindle3
+# TOP = 250
+# BOTTOM = 100
+# LEFT = 50
+# RIGHT = 50
+
+## for kobo touch
+TOP = 50
 BOTTOM = 100
-LEFT = 50
-RIGHT = 50
+LEFT = 40
+RIGHT = 40
 
 SIZE = '560x735' # for small books reading portrait style
 #SIZE = '720' # for large books reading landscape style
