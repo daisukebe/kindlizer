@@ -81,7 +81,7 @@ def ppm2png( ppm, png )
 	sh "convert #{ppm_file(ppm)} \
 		#{ENV["KINDLIZER_PHASE2_OPT"]} \
 		-level '#{LEVEL}' -type Grayscale -background white \
-		-chop #{LEFT}x#{TOP} \
+		-chop #{LEFT}x#{TOP} -contrast -contrast\
 		-gravity SouthEast -chop #{RIGHT}x#{BOTTOM}\
 		-gravity NorthWest -fuzz 50% -trim -resize #{SIZE}\
 		#{/x/ =~ SIZE ? '' : '-gravity SouthWest -splice 1x15 -gravity NorthEast -splice 1x15'}\
